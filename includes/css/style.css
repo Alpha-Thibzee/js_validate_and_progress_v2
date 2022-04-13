@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+html {
+    height: 100vh;
+}
+progress {
+  margin-top: 7%;
+  height: 30px;
+  width: 250px;
+  border:solid rgb(194, 194, 194);
+} 
+progress[value]::-webkit-progress-bar{
+  background-color: transparent;
+}
+
+.rouge progress[value]::-webkit-progress-value{
+  background-color: #fd0000;
+}
+.orange progress[value]::-webkit-progress-value{
+  background-color: orange;
+}
+.jaune progress[value]::-webkit-progress-value{
+  background-color: yellow;
+}
+.vert progress[value]::-webkit-progress-value{
+  background-color: greenyellow;
+}
+body {
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+h1 {
+    font-family: 'Rubik Glitch', cursive;
+    font-weight: 50;
+    color: white;
+}
+p{
+  font-family: 'Raleway', sans-serif;
+  font-size: large;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+.input {
+    margin-top: 1% ;
+}
+.button {
+    margin-top: 5%;
+}
+.button {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid rgb(194, 194, 194);
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(220, 220, 220, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  color: white;
+}
+.button:after {
+  content: "";
+  background-color: #ffe54c !important;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+.button:hover:after {
+  top: 0px;
+  left: 0px;
+}
+@media (min-width: 768px) {
+  .button {
+    padding: 13px 50px 13px;
+  }
+}
+
+
+
