@@ -1,33 +1,38 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" id="mode" class="white">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="includes/css/style.css">
+    <link rel="stylesheet" href="dist/output.css">
+    <script defer src="https://kit.fontawesome.com/fda026f497.js" crossorigin="anonymous"></script>
     <script defer src="includes/js/app.js"></script>
     <title>Js test</title>
 </head>
-<body>
+<body class=" bg-white dark:bg-gray-800">
 
+   <div class="container mt-32">
+    <i id="icon" class=" fa-solid fa-moon text-7xl dark:text-white"></i>
+    </div>
+    <main class="container mt-0">
 
-    <main class="container">
+        <h1 class="text-3xl font-bold dark:text-white">Test de Javascript</h1>
 
-            <h1>Test de Javascript</h1>
     
             <form method="POST">   
-                    <input type="text" class="button" placeholder="Nom d'utilisateur"></input>
-                    <input type="email" class="button" placeholder="Adresse e-mail"></input>
-                    <input type="password" id="password" class="button" placeholder="Mot de passe"></input>
+                    <input type="text" class="button text-black dark:text-white" placeholder="Nom d'utilisateur"></input>
+                    <input type="email" class="button text-black dark:text-white" placeholder="Adresse e-mail"></input>
+                    <input type="password" id="password" class="button text-black dark:text-white" placeholder="Mot de passe"></input>
                     <section id="stylebar" class="">
                     <progress id="progress" class="" value="0" max="10"></progress> 
                     </section>
-                    <button class="button">Envoyer</button>
+                    <button class="button ">Envoyer</button>
             </form>
 
             <div >
                 
-                <p id="infos"></p>
+                <p id="infos" class="mt-10 text-3xl text-black dark:text-white"></p>
             </div>
     </main>
 

@@ -1,14 +1,35 @@
+let mode = document.getElementById("mode");
+let toggler = document.getElementById('icon');
+function toggle(){
+     mode.classList.remove('white');
+    mode.classList.toggle("dark");
+
+     if(toggler.classList.contains('fa-solid')){
+          toggler.classList.remove('fa-solid');
+          toggler.classList.add('fa-regular');
+     }else {
+          toggler.classList.remove('fa-regular');
+          toggler.classList.add('fa-solid');
+     }
+
+}
+
+icon.addEventListener('click',()=>  toggle());
+
 let password = document.getElementById("password");
 const regex = new RegExp('^(?=.{10,}$)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\\W).*$');
 
 
 
 function test() {
+     $text ="";
     let value = password.value;
    if(regex.test(value) === true){
-        document.getElementById("infos").innerText="Mot de passe sécurisé";
+        $text = "Mot de passe sécurisé";
+        document.getElementById("infos").innerText= $text;
    } else if(regex.test(value) === false) {
-        document.getElementById("infos").innerText="Mot de passe non sécurisé";
+        $text = "Mot de passe non sécurisé";
+        document.getElementById("infos").innerText= $text;
    }
 } 
 
@@ -32,11 +53,16 @@ console.log(e);
      }
 
      if(password.value.length == 10)
-     {}
+     {
+ 
+          
+
+     }
      else {
 
           if (e.data === null){
           delValue();
+          document.getElementById("paragraphe").innerText = "";
           }
 
      }
